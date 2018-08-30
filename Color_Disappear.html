@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<table>
+
+	<tr>
+		<td><p class="red"><font color="red">Sunset</font></p></td>
+		<td><p class="green"><font color="green">Emerald</font></p></td>
+		<td><p class="yellow"><font color="yellow">Amer</font></p></td>
+	</tr>
+	<tr>
+		<td><p class="blue"><font color="blue">Ocean</font></p></td>
+		<td><p class="yellow"><font color="yellow">Banana</font></p></td>
+		<td><p class="green"><font color="green">Grass</font></p></td>
+	</tr>
+	<tr>
+		<td><p class="yellow"><font color="yellow">Gold</font></p></td>
+		<td><p class="red"><font color="red">Fire</font></p></td>
+		<td><p class="blue"><font color="blue">Sapphire</font></p></td>
+	</tr>
+	<tr>
+		<td><p class="green"><font color="green">Bamboo</font></p></td>
+		<td><p class="blue"><font color="blue">Blueberry</font></p></td>
+		<td><p class="red"><font color="red">Ruby</font></p></td>
+	</tr>
+</table>
+<br><br><br>
+
+<table>
+	<tr>
+		<td><button id="rd" style="background-color:red">Red Disappear</button></td>
+		<td><button id="yd" style="background-color:yellow">Yellow Disappear</button></td>
+		<td><button id="gd" style="background-color:green">Green Disappear</button></td>
+		<td><button id="bd" style="background-color:blue">Blue Disappear</button></td>
+	</tr>
+	<tr>
+		<td><button id="ra" style="background-color:red">Red Appear</button></td>
+		<td><button id="ya" style="background-color:yellow">Yellow Appear</button></td>
+		<td><button id="ga" style="background-color:green">Green Appear</button></td>
+		<td><button id="ba" style="background-color:blue">Blue Appear</button></td>
+	</tr>
+	<tr>
+	</tr>
+</table>
+
+<script>
+	$("document").ready(function(){
+		$("#rd").click(function(){
+			$(".red").hide();
+		});
+		$("#ra").click(function(){
+			$(".red").show();
+		});
+		$("#yd").click(function(){
+			$(".yellow").hide();
+		});
+		$("#ya").click(function(){
+			$(".yellow").show();
+		});
+		$("#bd").click(function(){
+			$(".blue").hide();
+		});
+		$("#ba").click(function(){
+			$(".blue").show();
+		});
+		$("#gd").click(function(){
+			$(".green").hide();
+		});
+		$("#ga").click(function(){
+			$(".green").show();
+		});
+	});
+</script>
+
+</html>
+
